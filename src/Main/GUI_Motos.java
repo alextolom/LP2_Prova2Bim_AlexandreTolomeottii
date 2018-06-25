@@ -71,7 +71,7 @@ class GUI_Motos extends JFrame {
     private JPanel pnEast = new JPanel(new FlowLayout(FlowLayout.RIGHT));
     private JPanel pnWest = new JPanel(new GridLayout(2,2));
 
-    private JLabel lbIDCarro = new JLabel("<html><FONT COLOR=#29088A>Número(ID)/Nome da moto</FONT></html>");
+    private JLabel lbIDCarro = new JLabel("<html><FONT COLOR=#29088A>Número(ID) do veículo</FONT></html>");
     private JLabel lbMarca = new JLabel("<html><FONT COLOR=#29088A>Marca(Fabricante)</FONT></html>");
     private JLabel lbModelo = new JLabel("<html><FONT COLOR=#29088A>Modelo</FONT></html>");
     
@@ -575,7 +575,7 @@ class GUI_Motos extends JFrame {
                 scrollList.setViewportView(tabela);
                 List<String> listaDeContatos = controle.listar();//busca a lista de contatos
                 String[] aux;
-                colunas = new String[]{"ID da moto", "Marca", "Modelo","Data inserida"};
+                colunas = new String[]{"ID do veículo", "Marca", "Modelo","Data inserida"};
                 dados = new String[0][3];
                 model.setDataVector(dados, colunas);
                 for (int i = 0; i < listaDeContatos.size(); i++) {
