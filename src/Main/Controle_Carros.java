@@ -7,28 +7,28 @@ import java.util.List;
  *
  * @author radames
  */
-public class Controle {
+public class Controle_Carros {
 
-    List<Contato> lista = new ArrayList<>();
+    List<Contato_Carros> lista = new ArrayList<>();
 
-    public Controle() {
+    public Controle_Carros() {
    
     }
 
-    public Contato buscar(int chave) {
+    public Contato_Carros buscar(int chave) {
         for (int i = 0; i < lista.size(); i++) {
-            if (chave==lista.get(i).getId()) {
+            if (chave==lista.get(i).getNomeDoCarro()) {
                 return lista.get(i);//se encontrou, retorna a linha toda (um contato)
             }
         }
         return null; //se não encontrou na lista, retorna um contato nulo
     }
 
-    public void inserir(Contato contato) {
+    public void inserir(Contato_Carros contato) {
         lista.add(contato);
     }
 
-    void alterar(Contato contatoOriginal, Contato contatoAlterado) {
+    void alterar(Contato_Carros contatoOriginal, Contato_Carros contatoAlterado) {
         lista.set(lista.indexOf(contatoOriginal), contatoAlterado);
     }
 
@@ -36,15 +36,16 @@ public class Controle {
         List<String> ls = new ArrayList<>();
         for (int i = 0; i < lista.size(); i++) {
             ls.add(""
-                    + lista.get(i).getId() + ";"
-                    + lista.get(i).getNome() + ";"
-                    + lista.get(i).getEndereco()
+                    + lista.get(i).getNomeDoCarro() + ";"
+                    + lista.get(i).getMarca() + ";"
+                    + lista.get(i).getModelo() + ";"
+                    + lista.get(i).getData()
             );
         }
         return ls;
     }
     
-    public void excluir(Contato contato){
+    public void excluir(Contato_Carros contato){
         lista.remove(contato);
     }
 
