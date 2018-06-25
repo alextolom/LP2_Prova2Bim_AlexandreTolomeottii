@@ -69,7 +69,7 @@ class GUI_Diversos extends JFrame {
     private JPanel pnEast = new JPanel(new FlowLayout(FlowLayout.RIGHT));
     private JPanel pnWest = new JPanel(new GridLayout(2,2));
 
-    private JLabel lbIDCarro = new JLabel("<html><FONT COLOR=#29088A>Número(ID)/Nome do carro</FONT></html>");
+    private JLabel lbIDCarro = new JLabel("<html><FONT COLOR=#29088A>Número(ID) do veículo</FONT></html>");
     private JLabel lbMarca = new JLabel("<html><FONT COLOR=#29088A>Marca(Fabricante)</FONT></html>");
     private JLabel lbModelo = new JLabel("<html><FONT COLOR=#29088A>Modelo</FONT></html>");
     
