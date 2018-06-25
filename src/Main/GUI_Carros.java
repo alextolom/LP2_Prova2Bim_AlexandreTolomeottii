@@ -595,7 +595,6 @@ class GUI_Carros extends JFrame {
                 if (dialogResult == JOptionPane.YES_OPTION) {
                     controle.excluir(contato);
                     setLog("O usuário excluiu [" + contato.getNomeDoCarro() + "-" + contato.getMarca() + "]");
-
                 }
             }
         });
